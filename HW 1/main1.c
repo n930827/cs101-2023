@@ -9,20 +9,20 @@ int main()
     char find;
     int num = 0, in = 0;
     find = a[0];
-    for(int i=0;i<len;i++){
-        if (find == a[i]){
+    for (int i=0;i<len;i++) {
+        if (find == a[i]) {
             num+=1;
             times[in] = num;
             word[in] = a[i];
         }
-        else{
+        else {
             find = a[i];
             num = 1;
             in += 1;
         }
     }
-    for(int i=0;i<4;i++){
-        printf("%c%d",word[i],times[i]);
+    for (int i=0;i<4;i++) {
+        printf ("%c%d",word[i],times[i]);
     }
     return 0;
 }
