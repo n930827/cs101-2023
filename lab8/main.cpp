@@ -13,6 +13,7 @@ class Fueltank{
         }
         
         void fuel_up(int v, int gas){
+            set_Gas_grade(gas);
             cout<<"fuel_up: "<<v<<" Gas_grade: "<<gas<<endl;
         }
         
